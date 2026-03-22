@@ -1,6 +1,12 @@
 # BRUTUS.py
 Ferramenta de teste ético de autenticação (HTTP / SSH / Hash Cracking)
 
+## Preview
+
+<p align="center">
+  <img src="banner.png" alt="BRUTUS Banner" width="700"/>
+</p>
+
 # BRUTUS.py – Multi-Protocol Authentication Tester
 
 BRUTUS.py is a **Python-based**, modular authentication testing tool developed for **authorized penetration testing**, **red team practice**, and **educational purposes** in offensive security.
