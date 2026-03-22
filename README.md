@@ -1,10 +1,11 @@
 # BRUTUS.py
-Ferramenta de teste ético de autenticação (HTTP/SSH/hash cracking)
+Ferramenta de teste ético de autenticação (HTTP / SSH / Hash Cracking)
+
 # BRUTUS.py – Multi-Protocol Authentication Tester
 
-BRUTUS.py is a **Python-based**, modular authentication testing tool developed for **authorized penetration testing**, **red team operations**, and **educational purposes** in offensive security.
+BRUTUS.py is a **Python-based**, modular authentication testing tool developed for **authorized penetration testing**, **red team practice**, and **educational purposes** in offensive security.
 
-It enables credential guessing (dictionary attacks, brute-force with rules) against common authentication vectors encountered in real-world security assessments.
+It enables credential testing through **online brute-force attacks** and **offline hash cracking**, covering common authentication scenarios found in real-world environments.
 
 **⚠️ LEGAL AND ETHICAL DISCLAIMER**  
 This tool is **strictly for ethical and legal use only**.  
@@ -17,29 +18,32 @@ Use responsibly. Test only what you are authorized to test.
 
 | Protocol       | Mode                  | Description                                                                 |
 |----------------|-----------------------|-----------------------------------------------------------------------------|
-| **HTTP Form**  | Online brute-force   | Attacks web login forms (POST-based). Customizable success/failure detection, CSRF handling, headers, proxies. |
-| **SSH**        | Online brute-force   | Targets SSH servers using Paramiko. Supports username lists, password lists, timeouts, rate limiting. |
-| **Hash**       | Offline cracking     | Cracks password hashes (MD5, SHA-1, SHA-256, NTLM, bcrypt*, etc.) using wordlists or incremental brute-force. Multi-threaded. |
-
-*Note: bcrypt and slow hashes are supported but performance-limited without GPU acceleration.
+| **HTTP Form**  | Online brute-force    | Attacks web login forms (POST-based) with customizable parameters.         |
+| **SSH**        | Online brute-force    | Targets SSH authentication using Python-based implementation.              |
+| **Hash**       | Offline cracking      | Performs dictionary-based cracking for common hash types (e.g., MD5, SHA). |
 
 ## Main Features
 
 - Modular architecture — easy to extend for new protocols
-- Threading and rate-limiting to avoid lockouts / detection
-- Advanced wordlist handling (combine lists, rules, filtering)
-- Proxy support (HTTP, SOCKS, Tor integration optional)
-- Detailed logging (successes, failures, timestamps, attempts)
-- Colorized console output (via colorama)
-- Command-line friendly with argparse (or future config file support)
-- Built with clean code practices for learning and contribution
+- Multi-threaded execution for improved performance
+- Customizable parameters (fields, payloads, targets)
+- External wordlist support for dictionary attacks
+- Basic success/failure detection mechanisms
+- Command-line based usage
+- Built for learning and practical security testing
+
+## Planned Improvements
+
+- Advanced wordlist manipulation (rules, combinations)
+- Proxy support (HTTP/SOCKS)
+- Improved detection handling (tokens, dynamic responses)
+- Logging system (detailed reports of attempts)
+- CLI enhancements with argparse
+- Performance optimizations for hash cracking
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/SEU_USUARIO/BRUTUS.py.git
+git clone https://github.com/CATOMBO/BRUTUS.py.git
 cd BRUTUS.py
-
-# Install dependencies
-pip install -r requirements.txt
