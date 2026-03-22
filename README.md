@@ -4,7 +4,7 @@ Ferramenta de teste ético de autenticação (HTTP / SSH / Hash Cracking)
 ## Preview
 
 <p align="center">
-  <img src="banner.png" alt="BRUTUS Banner" width="700"/>
+  <img src="./assets/banner.png" alt="BRUTUS Banner" width="700"/>
 </p>
 
 # BRUTUS.py – Multi-Protocol Authentication Tester
